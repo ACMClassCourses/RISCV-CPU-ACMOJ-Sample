@@ -25,8 +25,4 @@ initial begin
   $finish;
 end
 
-initial begin
-     #300000000 $finish;
-end
-
 endmodule

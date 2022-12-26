@@ -2,7 +2,7 @@
 
 This is a sample repo for RISC-V CPU simulation on ACMOJ.
 
-1. OJ 仅需要两个文件夹：`sim` 和 `src` 即可完成模拟：``sim``  中存放 ``testbench.v``， ``src`` 中存放你的 CPU 设计以及 uart、内存等辅助模块。本 repo 中给出的这两个文件夹与 [ACMClassCourses/RISCV-CPU: MS108 Course Project, SJTU ACM Class. (github.com)](https://github.com/ACMClassCourses/RISCV-CPU/tree/main/riscv) 中给出的几乎完全一致，唯一区别在于 OJ 的 ``testbench.v`` 里不会执行波形输出（即上述 repo 中 ``testbench.v`` 里的 29 行、30 行的 ）``dumpfile("test.vcd"); dumpvars(0, testbench);`` 是没有的。理论上，您只要使用本 repo 作为模版，将你自己写的文件放入 src 文件夹即可提交 OJ，无需任何改动。
+1. OJ 仅需要两个文件夹：`sim` 和 `src` 即可完成模拟：``sim``  中存放 ``testbench.v``， ``src`` 中存放你的 CPU 设计以及 uart、内存等辅助模块。本 repo 中给出的这两个文件夹与 [ACMClassCourses/RISCV-CPU: MS108 Course Project, SJTU ACM Class. (github.com)](https://github.com/ACMClassCourses/RISCV-CPU/tree/main/riscv) 中给出的几乎完全一致，唯一区别在于 OJ 的 ``testbench.v`` 里不会执行波形输出（即上述 repo 中 ``testbench.v`` 里的 29 行、30 行的 ）``dumpfile("test.vcd"); dumpvars(0, testbench);`` 是没有的。同时，31 行的在 300000000 步后停止的限制也被移除了。理论上，您只要使用本 repo 作为模版，将你自己写的文件放入 src 文件夹即可提交 OJ，无需任何改动。
 2. 请手动选择评测语言为 ``Git (Verilog)``。
 3. 如果你持续遭遇 WA 或 RE，请考虑检查如下几点：
    - 您是否修改过上述 ``testbench.v`` （如果打开波形输出 stdout 会有额外信息，自然会 WA）
